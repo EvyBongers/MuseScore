@@ -35,11 +35,14 @@ void StubPlatformTheme::stopListening()
 
 bool StubPlatformTheme::isFollowSystemThemeAvailable() const
 {
+    // TODO: is org.freedesktop.appearance color-scheme available?
+    // https://flatpak.github.io/xdg-desktop-portal/#gdbus-org.freedesktop.portal.Settings
     return false;
 }
 
 bool StubPlatformTheme::isSystemThemeDark() const
 {
+    // TODO: read org.freedesktop.appearance color-scheme
     return false;
 }
 
